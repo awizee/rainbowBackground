@@ -16,9 +16,10 @@ const changeBg = (color) => {
   document.body.style.backgroundColor = color;
 };
 
-setInterval(() => {
+const id = setInterval(() => {
   let i = Math.floor(Math.random() * 3);
   changeBg(colors[i]);
+  clearInterval(id);
 }, 3000);
 
 // const randColor = () => {
