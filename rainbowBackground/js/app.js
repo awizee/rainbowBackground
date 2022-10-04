@@ -1,40 +1,25 @@
-const rainbowColor = (color, delay, doNext) => {
-  setInterval(() => {
-    document.body.style.backgroundColor = color;
-    doNext && doNext();
-  }, delay);
+const colors = [
+  "red",
+  "green",
+  "purple",
+  "blue",
+  "yellow",
+  "orange",
+  "pink",
+  "black",
+  "white",
+  "gray",
+];
+
+const changeBg = (color) => {
+  console.log(color);
+  document.body.style.backgroundColor = color;
 };
 
-rainbowColor("red", 1000, () => {
-  rainbowColor("orange", 1000, () => {
-    rainbowColor("yellow", 1000, () => {
-      rainbowColor("green", 1000, () => {
-        rainbowColor("blue", 1000, () => {
-          rainbowColor("indigo", 1000, () => {
-            rainbowColor("violet", 1000, () => {});
-          });
-        });
-      });
-    });
-  });
-});
-
-// const rainbowColor = (color, delay) => {
-//   new Promise((resolve, reject) => {
-//     setInterval(() => {
-//       document.body.style.backgroundColor = color;
-//       resolve();
-//     }, delay);
-//   });
-// };
-
-// rainbowColor("red", 1000)
-//   .then(() => rainbowColor("orange", 1000))
-//   .then(() => rainbowColor("yellow", 1000))
-//   .then(() => rainbowColor("green", 1000))
-//   .then(() => rainbowColor("blue", 1000))
-//   .then(() => rainbowColor("indigo", 1000))
-//   .then(() => rainbowColor("violet", 1000));
+setInterval(() => {
+  let i = Math.floor(Math.random() * 3);
+  changeBg(colors[i]);
+}, 3000);
 
 // const randColor = () => {
 //  setInterval(() => {
