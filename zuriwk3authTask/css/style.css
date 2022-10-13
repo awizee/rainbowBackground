@@ -6,19 +6,19 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("../Week3Tasks/images/register.jpg");
+  background-image: url("../images/register.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
   min-height: 100vh;
 }
 #login {
-  background-image: url("../Week3Tasks/images/login.jpg");
+  background-image: url("../images/login.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 #successPage {
-  background-image: url("../Week3Tasks/images/homepage.jpg");
+  background-image: url("../images/homepage.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
