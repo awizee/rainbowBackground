@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../Week3Tasks/images/register.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  min-height: 100vh;
+}
+#login {
+  background-image: url("../Week3Tasks/images/login.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#successPage {
+  background-image: url("../Week3Tasks/images/homepage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#succes {
+  color: green;
+  font-size: em;
+}
+#successful {
+  color: green;
+  width: 50vw;
+  background-color: #eee;
+  font-size: 3em;
+  text-align: center;
+  border: 1px solid green;
+  border-radius: 0.8em;
+}
+article {
+  width: 60vw;
+  min-height: 50vh;
+  background-color: #eee;
+  border-radius: 1em;
+  padding: 0.5em;
+}
+form {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+h2 {
+  text-align: center;
+}
+label,
+input {
+  display: inline-block;
+  font-size: 1.5em;
+}
+input {
+  margin-bottom: 0.5em;
+  padding: 0.3em;
+  border-radius: 0.3em;
+}
+#gender {
+  height: 3em;
+  border-radius: 0.3em;
+}
+#favcolor {
+  width: 2em;
+  height: 2em;
+}
+#signin {
+  width: 70%;
+  margin: auto;
+  margin-top: 0.5em;
+}
+a {
+  color: blue;
+  text-decoration: none;
+}
+p {
+  text-align: center;
+}
+footer {
+  color: #eee;
+  text-align: center;
+  background-color: black;
+  width: 1000vh;
+  height: 5vh;
+}
