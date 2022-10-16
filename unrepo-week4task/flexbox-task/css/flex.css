@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(hue, saturation, lightness);
+  /* padding: 1em;
+  width: 100vw;
+  height: 100vh; */
+  color: hsla(hue, saturation, lightness, alpha);
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100vh;
+  margin: auto;
+}
+main div {
+  padding: 3em;
+  /* width: em; */
+  /* height: 30em; */
+}
+#item-1 {
+  background-color: hsl(31, 77%, 52%);
+}
+#item-2 {
+  background-color: hsl(184, 100%, 22%);
+}
+#item-3 {
+  background-color: hsl(179, 100%, 13%);
+}
+p {
+}
+button {
+  padding: 0.5em;
+  border-radius: 5em;
+  width: 90%;
+}
