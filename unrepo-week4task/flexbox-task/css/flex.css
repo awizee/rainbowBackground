@@ -8,6 +8,20 @@ body {
   background-color: hsl(hue, saturation, lightness);
   color: hsla(hue, saturation, lightness, alpha);
 }
+.next {
+  float: right;
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid hsl(179, 100%, 13%);
+  border-radius: 1em;
+  background-color: hsl(184, 100%, 22%);
+}
+body a {
+  color: hsl(31, 77%, 52%);
+  text-decoration: none;
+ 
+}
+  
 main {
   display: flex;
   justify-content: center;
@@ -34,12 +48,18 @@ main div {
 }
 h1 {
   color: hsl(0, 0%, 95%);
-  margin-top: 3em;
+  margin-top: 1em;
   margin-bottom: 1em;
+  font-size: 15px;
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
 }
 p {
   color: hsla(0, 0%, 100%, 0.75);
-  margin-bottom: 7em;
+  margin-bottom: 3em;
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
 }
 button {
   background-color: hsl(0, 0%, 95%);
@@ -52,21 +72,39 @@ button {
 #sedan {
   color: hsl(31, 77%, 52%);
 }
+#sedan:hover {
+  color: white;
+  border: 1px solid white;
+  background-color: hsl(31, 77%, 52%);
+  cursor: pointer;
+}
 #suv {
   color: hsl(184, 100%, 22%);
+}
+#suv:hover {
+  color: white;
+  border: 1px solid white;
+  background-color: hsl(184, 100%, 22%);
+  cursor: pointer;
 }
 #luxury {
   color: hsl(179, 100%, 13%);
 }
-@media screen and (min-width: 375px) {
-  main div {
-    width: 30%;
-    height: 70%;
+#luxury:hover {
+  color: white;
+  border: 1px solid white;
+  background-color: hsl(179, 100%, 13%);
+  cursor: pointer;
+}
+@media screen and (max-width: 375px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 }
-@media screen and (max-width: 1440px) {
-  /* main div {
-    width: 30%;
-    height: 30%;
-  } */
+@media screen and (min-width: 1440px) {
+  main {
+    display: flex;
+  }
 }

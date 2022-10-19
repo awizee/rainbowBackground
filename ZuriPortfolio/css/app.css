@@ -7,48 +7,55 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("../images/homepage.jpg");
+  background-color: rgb(47, 103, 103);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100vw;
   min-height: 100vh;
 }
+header {
+  text-align: center;
+}
 nav {
-  margin: 0;
-  padding: 0;
   background-color: aquamarine;
 }
-ul,
-li,
-a {
-  text-decoration: none;
+ul {
   margin: 0;
   padding: 0;
 }
+
 li,
 a {
   text-decoration: none;
   margin: 0 1em;
   font-size: 1.5em;
 }
+
 article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Courier New", Courier, monospace;
   margin: auto;
   border-radius: 1em;
   padding: 0.3em;
 }
 .homeP {
-  background-color: antiquewhite;
+  background-color: rgba(250, 235, 215, 0.644);
   padding: 1em;
   border-radius: 1em;
 }
 h2 {
   text-align: center;
 }
-img,
+img {
+  margin-left: 8em;
+  border-radius: 50%;
+}
+
 figcaption {
-  margin-left: 10em;
+  margin-left: 12em;
 }
 p {
   font-size: 1.5em;
@@ -63,10 +70,13 @@ footer {
   text-align: center;
   color: #fff;
   background-color: #000;
-  width: 100vw;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
 }
 
 a:hover {
   color: #fff;
   background-color: #000;
+  transition: 1s background-color ease-in-out;
 }
